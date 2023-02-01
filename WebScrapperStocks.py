@@ -15,9 +15,9 @@ def getData(symbol):
 
     stock = {
     symbol : symbol,
-    "price" : soup.find("div", {'class':'D(ib) Mend(20px)'}).find_all('fin-streamer')[0].text,
-    "change" : soup.find("div", {'class':'D(ib) Mend(20px)'}).find_all('fin-streamer')[1].text,
-    "percent" :soup.find("div", {'class':'D(ib) Mend(20px)'}).find_all('fin-streamer')[2].text,
+    "price" : soup.find("div", {'class':'D(ib) Mend(20px)'}).find_all('fin-streamer')[0].text
+    #"change" : soup.find("div", {'class':'D(ib) Mend(20px)'}).find_all('fin-streamer')[1].text,
+    #"percent" :soup.find("div", {'class':'D(ib) Mend(20px)'}).find_all('fin-streamer')[2].text,
     
     }
 
@@ -26,7 +26,7 @@ def getData(symbol):
 
     return stock
 
-HSI = ["S51.SI","E27.SI","Z74.SI","BUOU.SI"]
+HSI = ["S51.SI","TSLA","AAPL","GOOGL"]
 
 for step in range(1,101):
     price2 = []
@@ -34,7 +34,7 @@ for step in range(1,101):
     timestamp = datetime.datetime.now()
     timestamp = timestamp.strftime("%m/%d/%Y, %H:%M:%S")
     for stockcode in HSI:
-       price2.append(getData(stockcode))
+       price2.append(getData(stockcode)["price"])
     col = [timestamp]
     col.extend(price2)
     df = pd.DataFrame(col)
