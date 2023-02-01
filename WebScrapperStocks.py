@@ -47,5 +47,4 @@ for step in range(1,101):
 
 
 
-print(getData("VAST.L"))
 
