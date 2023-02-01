@@ -1,4 +1,4 @@
-## Stock Price Scraper
+## Stock Price Scraper & Visualiser
 ### Overview
 This is a Python script that performs web scraping to obtain the real-time stock prices of specified companies. The script then stores the obtained data in a CSV file and visualizes the stock price data using matplotlib.
 
