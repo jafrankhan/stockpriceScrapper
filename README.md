@@ -27,8 +27,8 @@ The second component of the script uses the Pandas library to read the data from
 
 ### How it should look
 
-![The scraping of stock prices seen in the console](/screenshot/screenshot1.png)
-![The GUI of the stock-price graph done through MatplotLib](/screenshot/screenshot2.png)
+![The scraping of stock prices seen in the console](stockpriceScrapper/screenshots/screenshot1.png)
+![The GUI of the stock-price graph done through MatplotLib](stockpriceScrapper/screenshots/screenshot2.png)
 
 ## Troubleshooting
 The script was created using a knowledge cut-off of 2021. Some changes in the website's HTML structure or API might affect the functionality of the script. If the script is not working, check the website's structure and make the necessary changes to the code.
