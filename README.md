@@ -25,6 +25,10 @@ The script then iterates 100 times, and at each iteration, the stock prices of s
 ##### Data visualization component
 The second component of the script uses the Pandas library to read the data from the CSV file and the Matplotlib library to create a real-time stock price graph. The graph updates every second with new data.
 
+### How it should look
+
+![The scraping of stock prices seen in the console](screenshot1.png)
+![The GUI of the stock-price graph done through MatplotLib](screenshot2.png)
 
 ## Troubleshooting
 The script was created using a knowledge cut-off of 2021. Some changes in the website's HTML structure or API might affect the functionality of the script. If the script is not working, check the website's structure and make the necessary changes to the code.
